@@ -1,4 +1,5 @@
-# MovieRecommendation
+# Movie Recommendation
+![Generic Movie App](./Images/movie.jpg)
 
 I am taking a shot at building a movie recommendation system. I will be tackling
 this as though I am building a movie recommendation system for an application.
@@ -7,7 +8,9 @@ It will work towards recommending a user movies and streaming platform based on
 ratings they have given to previous movies.
 
 # The Data
-The data comes from the movielens data *here*. I am using the smaller dataset
+The data comes from the movielens data <a href='https://grouplens.org/datasets/movielens/'>
+    *here*
+</a>. I am using the smaller dataset
 consisting of about 100,000 ratings with 600 users. The including information
 will be user ID, movie ID, tags, genres, and some timestamps. We will make a 
 train set and a data set to build our model and then see how it does with information
@@ -19,6 +22,11 @@ We will run a variety of models:
 1. Basic models in the surprise package
 2. k-NN inspired models
 3. Matrix Factorization models
+
+<img src="Images/collabfilt.png" alt="Collaborative Filtering" width="200"/>
+
+This model will be a collaborative-filtering based model. It will make recommendations
+based on other user data.
 
 # Current Conclusion
 After running several models and judging based on RMSE, SVD++ is our current
